@@ -41,7 +41,7 @@ const fetchPokemon = () => {
         //Mandamos a colocar la primera letra del nombre en mayúscula
         let nombre2 = capitalizar(nombre);
         //Completamos el nombre con el numero del pokemon
-        let nombre_completo = "#" + data.order + ": " + nombre2;
+        let nombre_completo = "#" + data.id + ": " + nombre2;
         //Obtenemos las stats
         let hp = data.stats[0].base_stat;
         let attack = data.stats[1].base_stat;
