@@ -1,0 +1,144 @@
+@font-face {
+    font-family: "Pokemon";
+    src: url(../fonts/Pokemon.ttf) format("opentype");
+}
+
+body{
+    background-image: url(../images/pokemon-bg.png);
+    background-size: cover;
+}
+
+.centrar{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%)
+}
+
+.cuadrado{
+    margin-top: -40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 850px;
+    height: 215px;
+    padding-left:30px;
+    padding-top:30px;
+    font-size:25px;
+    font-family: 'Pokemon', Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+.texto{
+    z-index:5;
+    margin-top: 265px;
+    margin-left: -300px;
+    width: 165px;
+    height: 100px;
+    background-color: #55ab62;
+}
+
+.btn-circle.btn-xl {
+    z-index:5;
+    width: 70px;
+    height: 70px;
+    padding: 10px 10px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+    background-color: black;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    margin-top: 180px;
+    margin-left: -420px;
+}
+
+.informacion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+  
+.informacion > div {
+    width: 50%;
+}
+
+.informacion2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+  
+.informacion2 > div {
+    width: 30%;
+}
+
+.derecha-izquierda{
+    margin-left: 110px;
+    line-height : 30px;
+    font-size: 20px;
+}
+
+.derecha-derecha{
+    position: static;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
+    line-height : 30px;
+}
+
+@media screen and (max-width: 1050px){   
+    .pokedex{      
+        content:url("../images/pokedex_portrait.png");
+        width: 350px;
+    }
+
+    .cuadrado{
+        width: 226px;
+        height: 176px;
+        font-size:18px;
+    }
+
+    .texto{
+        z-index:5;
+        margin-top: 195px;
+        margin-left: -35px;
+        width: 115px;
+        height: 60px;
+    }
+
+    .btn-circle.btn-xl {
+        width: 60px;
+        height: 60px;
+        z-index:5;
+        font-size: 10px;
+        margin-top: 130px;
+        margin-left: -120px;
+    }
+
+    .informacion{
+        line-height : 20px;
+        font-size: 15px;
+    }
+
+    .derecha-izquierda{
+        margin-left: 10px;
+        line-height : 20px;
+        font-size: 15px;
+    }
+
+    .derecha-derecha{
+        margin-left: 10px;
+        margin-top: 0px;
+        line-height : 20px;
+        font-size: 15px;
+    }
+
+    #izquierda{
+        margin-left: -20px;
+    }
+
+    .informacion2 > div {
+        width: 100%;
+    }
+}

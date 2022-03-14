@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Pokedex</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div>
+        <!--Cuadro de informacion-->
+        <div class="informacion cuadrado centrar" id="info">
+            <!--El cuadro se divide en dos columnas-->
+            <!--Columna izquierda-->
+            <div id="izquierda">
+                <!--Cambiará por el nombre del pokemon-->
+                <div id="nombre-pokemon">Welcome to the Pokedex</div>
+                <!--Cambiara por la imagen del pokemon-->
+                <div><img src="images/logo.png" alt="" id="pokeImg" style="width: 80px;"></div>
+                <!--Colocará el tipo de pokemon-->
+                <div id="tipoPokemon"></div>
+            </div>
+            <!--Columna derecha, la cual a su vez se divide nuevamente en dos columnas-->
+            <div class="informacion2">
+                <!--Parte izquierda de la segunda columna-->
+                <div class="derecha-izquierda">
+                    Statistics <br>
+                    <div id="hp">HP: </div>
+                    <div id="attack">Attack: </div>
+                    <div id="defense">Defense: </div>
+                </div>
+                <!--Parte derecha de la segunda columna-->
+                <div class="derecha-derecha">
+                    <div id="sp-attack">SP-Attk: </div>
+                    <div id="sp-defense">SP-Def: </div>
+                    <div id="speed">Speed: </div>
+                </div>
+            </div>
+        </div>
+        <!--Imagen del pokedex-->
+        <div class="pokedex centrar"><img src="images/pokedex.png" alt="" width="1000px"></div>
+        <!--Cuadro de texto de entrada-->
+        <input type="text" class="texto centrar" id="pokeInput" placeholder="Pokemon">
+        <!--Botón que manda a llamar al js-->
+        <button type="button" class="btn btn-circle btn-xl centrar" onclick="fetchPokemon()">Search</button>
+    </div>
+</body>
+<footer><script src="js/index.js"></script></footer>
+</html>
